@@ -5,12 +5,12 @@ plugins {
 
 android {
     namespace = "com.bignerdranch.android.photogallery"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.bignerdranch.android.photogallery"
         minSdk = 21
-        targetSdk = 34
+        targetSdk = 35
         versionCode = 1
         versionName = "1.0"
 
