@@ -1,6 +1,7 @@
 package com.bignerdranch.android.photogallery
 
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -8,9 +9,13 @@ import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.bignerdranch.android.photogallery.api.FlickrApi
+import retrofit2.Call
+import retrofit2.Callback
+import retrofit2.Response
 import retrofit2.Retrofit
 import retrofit2.converter.scalars.ScalarsConverterFactory
 
+private const val TAG = "PhotoGalleryFragment"
 class PhotoGalleryFragment: Fragment() {
 
     private lateinit var photoRecyclerView: RecyclerView
@@ -24,6 +29,17 @@ class PhotoGalleryFragment: Fragment() {
                 .build()
 
         val flickrApi: FlickrApi = retrofit.create(FlickrApi::class.java)
+        val flickrHomePageRequest: Call<String> = flickrApi.fetchContents()
+
+        flickrHomePageRequest.enqueue(object: Callback<String> {
+            override fun onFailure(call: Call<String>, t: Throwable) {
+                Log.e(TAG, "Не удалось получить фотографии", t)
+            }
+
+            override fun onResponse(call: Call<String>, response: Response<String>) {
+                Log.d(TAG, "Ответ получен: ${response.body()}")
+            }
+        })
     }
 
     override fun onCreateView(
