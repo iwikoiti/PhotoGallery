@@ -48,6 +48,7 @@ dependencies {
     implementation(libs.androidx.google.gson)
     implementation(libs.androidx.lifecycle.extensions)
     implementation(libs.androidx.recyclerview)
+    implementation(libs.androidx.picasso)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
