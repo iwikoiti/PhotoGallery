@@ -15,6 +15,7 @@ retrofit-gson = "2.9.0"
 google-gson = "2.11.0"
 lifecycleExtensions = "2.2.0"
 picasso = "2.8"
+lifecycleLiveData = "2.8.7"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -29,6 +30,7 @@ androidx-converter-scalars = { module = "com.squareup.retrofit2:converter-scalar
 androidx-google-gson = { module = "com.google.code.gson:gson", version.ref = "google-gson" }
 androidx-lifecycle-extensions = { module = "androidx.lifecycle:lifecycle-extensions", version.ref = "lifecycleExtensions" }
 androidx-picasso = { module = "com.squareup.picasso:picasso", version.ref = "picasso" }
+androidx-lifecycle-livedata = { module="androidx.lifecycle:lifecycle-livedata-ktx", version.ref = "lifecycleLiveData" }
 
 material = { group = "com.google.android.material", name = "material", version.ref = "material" }
 androidx-activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
