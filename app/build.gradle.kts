@@ -46,6 +46,7 @@ dependencies {
     implementation(libs.androidx.retrofit.gson)
     implementation(libs.androidx.converter.scalars)
     implementation(libs.androidx.google.gson)
+    implementation(libs.androidx.lifecycle.extensions)
     implementation(libs.androidx.recyclerview)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
