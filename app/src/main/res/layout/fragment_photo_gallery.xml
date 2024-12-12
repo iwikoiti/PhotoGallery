@@ -5,5 +5,5 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingHorizontal="10dp"
-    android:paddingBottom="45dp"
-    android:paddingTop="35dp" />
+    android:paddingBottom="50dp"
+    android:paddingTop="100dp" />
