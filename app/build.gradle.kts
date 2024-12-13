@@ -50,6 +50,7 @@ dependencies {
     implementation(libs.androidx.recyclerview)
     implementation(libs.androidx.picasso)
     implementation(libs.androidx.lifecycle.livedata)
+    implementation(libs.androidx.work.runtime)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
